@@ -11,5 +11,8 @@
   "scripts": {
     "test": "node tests/github-user-tests.js",
     "lint": "node node_modules/jshint/bin/jshint ."
+  },
+  "dependencies": {
+    "request": "^2.40.0"
   }
 }
