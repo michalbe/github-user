@@ -9,13 +9,8 @@ var ghu = function(user, cb) {
       'user-Agent': 'github-user node package'
     }
   }, function(err, resp, body){
-    cb(err, body);
+    cb(err, JSON.parse(body));
   });
 };
 
-ghu('michalbe', function(err, data) {
-  if (err){
-    throw err;
-  }
-  console.log(data);
-});
+module.exports = ghu;
